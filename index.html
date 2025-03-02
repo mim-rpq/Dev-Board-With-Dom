@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Board</title>
+    <!-- tailwind and daisy ui  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Poppins google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <!-- css link  -->
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- Tailwind custom theme -->
+    <style type="text/tailwindcss">
+        @theme {
+          --color-clifford: #da373d;
+          --color-blue: #3752FD;
+          --color-primary: #F4F7FF;
+          --color-secondary: #00303C;
+          --color-button: #3752FD;
+          --color-p: #000000;
+          --font-poppins:  "Poppins", sans-serif;
+        }
+      </style>
+
+</head>
+
+<body class="font-poppins  bg-gray-300">
+    <!-- header start  -->
+    <header class=" max-w-screen-xl mx-auto py-5 ">
+        <div class="flex justify-between items-center bg-white p-6 my-9 rounded-2xl">
+            <div class="flex justify-center items-center gap-1 ">
+                <img src="images/logo.png" alt="">
+                <h2 class="font-light text-4xl">Dev<span class="font-bold">Board</span></h2>
+            </div>
+            <div>
+                <div class="flex justify-center items-center gap-6">
+                    <div class="flex justify-center items-center gap-3 bg-primary p-2 rounded-full px-5">
+                        <img src="images/checkbox.png" alt="">
+                        <h3 id="nav-score" class="font-bold text-3xl">23</h3>
+                    </div>
+                    <div id="theme" onclick=" changeBackgroundColor()">
+                        <img src="images/theme-btn.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header End -->
+    <!-- main start  -->
+    <main class=" max-w-screen-xl mx-auto bg-white  rounded-2xl  p-5">
+        <div class="grid grid-cols-4 gap-6">
+            <div class="col-span-3">
+                <div class="grid grid-cols-4 gap-6">
+                    <div>
+                        <div class="flex items-center bg-primary py-5 p-4 gap-6 rounded-xl">
+                            <div class="p-2 bg-white rounded-full">
+                                <img src="images/checkbox.png" alt="">
+                            </div>
+                            <div>
+                                <p class="text-secondary text-base">Task Assigned</p>
+                                <h2 id="assignedTask" class="font-bold text-3xl">05</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="" class="col-span-2 ">
+                        <div class="flex items-center py-5  p-4 gap-6 rounded-xl middle ">
+                            <div class="p-2 bg-white rounded-full">
+                                <img class="w-[44px] h-[44px]" src="images/board.png" alt="">
+                            </div>
+                            <div class="cursor-pointer">
+                               <a href="blog.html"><p class="text-white text-xl">Discover Something <br> New Today!</p></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex items-center bg-primary py-5 p-4 gap-6 rounded-xl">
+                            <div class="p-2 bg-white rounded-full">
+                                <img src="images/checkbox.png" alt="">
+                            </div>
+                            <div>
+                                <p id="date" class="text-secondary text-base ">Task Assigned</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border-b-2 border-primary border-dashed my-16">
+
+                </div>
+                <div class="grid grid-cols-3 gap-8">
+                    <div class="bg-primary p-3 rounded-2xl space-y-3">
+                        <button class=" px-4 rounded-lg py-2 text-base bg-white">ShopEase</button>
+                        <h1 id="historyTitle" class="text-2xl font-medium">Fix Mobile Button Issue </h1>
+                        <div class="bg-white rounded-lg p-4">
+                            <p class="text-p opacity-50">Debug using Chrome DevTools, check for overlapping...</p>
+                        </div>
+                        <div class="border-b-2 border-primary border-dashed">
+                            
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <p class="text-secondary opacity-50 ">Deadline</p>
+                                <h2 class="font-medium">21 March 2025</h2>
+                            </div>
+                            <div>
+                                <button id="complete" class="px-4 rounded-lg py-2 text-base bg-button text-white">Completed</button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="bg-primary p-3 rounded-2xl space-y-3">
+                        <button class=" px-4 rounded-lg py-2 text-base bg-white">ShopEase</button>
+                        <h1 class="text-2xl font-medium">Fix Mobile Button Issue </h1>
+                        <div class="bg-white rounded-lg p-4">
+                            <p class="text-p opacity-50">Debug using Chrome DevTools, check for overlapping...</p>
+                        </div>
+                        <div class="border-b-2 border-primary border-dashed">
+                            
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <p class="text-secondary opacity-50 ">Deadline</p>
+                                <h2 class="font-medium">21 March 2025</h2>
+                            </div>
+                            <div>
+                                <button onclick="devCount()" id="complete" class="px-4 rounded-lg py-2 text-base bg-button text-white">Completed</button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="bg-primary p-3 rounded-2xl space-y-3">
+                        <button class=" px-4 rounded-lg py-2 text-base bg-white">ShopEase</button>
+                        <h1 class="text-2xl font-medium">Fix Mobile Button Issue </h1>
+                        <div class="bg-white rounded-lg p-4">
+                            <p class="text-p opacity-50">Debug using Chrome DevTools, check for overlapping...</p>
+                        </div>
+                        <div class="border-b-2 border-primary border-dashed">
+                            
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <p class="text-secondary opacity-50 ">Deadline</p>
+                                <h2 class="font-medium">21 March 2025</h2>
+                            </div>
+                            <div>
+                                <button class="px-4 rounded-lg py-2 text-base bg-button text-white">Completed</button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="bg-primary p-3 rounded-2xl space-y-3">
+                        <button class=" px-4 rounded-lg py-2 text-base bg-white">ShopEase</button>
+                        <h1 class="text-2xl font-medium">Fix Mobile Button Issue </h1>
+                        <div class="bg-white rounded-lg p-4">
+                            <p class="text-p opacity-50">Debug using Chrome DevTools, check for overlapping...</p>
+                        </div>
+                        <div class="border-b-2 border-primary border-dashed">
+                            
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <p class="text-secondary opacity-50 ">Deadline</p>
+                                <h2 class="font-medium">21 March 2025</h2>
+                            </div>
+                            <div>
+                                <button class="px-4 rounded-lg py-2 text-base bg-button text-white">Completed</button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="bg-primary p-3 rounded-2xl space-y-3">
+                        <button class=" px-4 rounded-lg py-2 text-base bg-white">ShopEase</button>
+                        <h1 class="text-2xl font-medium">Fix Mobile Button Issue </h1>
+                        <div class="bg-white rounded-lg p-4">
+                            <p class="text-p opacity-50">Debug using Chrome DevTools, check for overlapping...</p>
+                        </div>
+                        <div class="border-b-2 border-primary border-dashed">
+                            
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <p class="text-secondary opacity-50 ">Deadline</p>
+                                <h2 class="font-medium">21 March 2025</h2>
+                            </div>
+                            <div>
+                                <button class="px-4 rounded-lg py-2 text-base bg-button text-white">Completed</button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="bg-primary p-3 rounded-2xl space-y-3">
+                        <button class=" px-4 rounded-lg py-2 text-base bg-white">ShopEase</button>
+                        <h1 class="text-2xl font-medium">Fix Mobile Button Issue </h1>
+                        <div class="bg-white rounded-lg p-4">
+                            <p class="text-p opacity-50">Debug using Chrome DevTools, check for overlapping...</p>
+                        </div>
+                        <div class="border-b-2 border-primary border-dashed">
+                            
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <p class="text-secondary opacity-50 ">Deadline</p>
+                                <h2 class="font-medium">21 March 2025</h2>
+                            </div>
+                            <div>
+                                <button class="px-4 rounded-lg py-2 text-base bg-button text-white">Completed</button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- activity  -->
+            <div class="bg-white ">
+                <div class="space-y-3">
+                    <div class="flex justify-center items-center gap-2">
+                        <img src="images/activity.png" alt="">
+                        <p>Activity log</p>
+                    </div>
+                    <div class="flex justify-center ">
+                        <button id="history" class="bg-button text-white py-3 px-6 text-xl rounded-lg">Clear History</button>
+                    </div>
+                    <div class="border-b border-dashed ">
+
+                    </div>
+
+                    <div id="activity" class="space-y-3">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- main End -->
+    <!-- footer start  -->
+    <footer>
+
+    </footer>
+    <!-- footer End -->
+    <script src="script/features.js"></script>
+    <script src="script/dev.js"></script>
+</body>
+
+</html>
