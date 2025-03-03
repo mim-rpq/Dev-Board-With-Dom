@@ -31,8 +31,8 @@
 
 <body class="font-poppins  bg-gray-300">
     <!-- header start  -->
-    <header class=" max-w-screen-xl mx-auto py-5 ">
-        <div class="flex justify-between items-center bg-white p-6 my-9 rounded-2xl">
+    <header class=" max-w-screen-xl mx-auto py-1 ">
+        <div class="flex justify-between items-center bg-white p-6 my-2 rounded-2xl">
             <div class="flex justify-center items-center gap-1 ">
                 <img src="images/logo.png" alt="">
                 <h2 class="font-light text-4xl">Dev<span class="font-bold">Board</span></h2>
@@ -63,7 +63,7 @@
                             </div>
                             <div>
                                 <p class="text-secondary text-base">Task Assigned</p>
-                                <h2 id="assignedTask" class="font-bold text-3xl">05</h2>
+                                <h2 id="assignedTask" class="font-bold text-3xl">06</h2>
                             </div>
                         </div>
                     </div>
@@ -80,25 +80,25 @@
                     <div>
                         <div class="flex items-center bg-primary py-5 p-4 gap-6 rounded-xl">
                             <div class="p-2 bg-white rounded-full">
-                                <img src="images/checkbox.png" alt="">
+                                <img src="images/calender.png" alt="">
                             </div>
                             <div>
-                                <p id="date" class="text-secondary text-base ">Task Assigned</p>
+                                <p id="date" class="text-secondary text-base "></p>
                                 
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="border-b-2 border-primary border-dashed my-16">
+                <div class="border-b-2 border-primary border-dashed my-5">
 
                 </div>
                 <div class="grid grid-cols-3 gap-8">
-                    <div class="bg-primary p-3 rounded-2xl space-y-3">
+                    <div class="bg-primary p-3 rounded-2xl space-y-3 task-box">
                         <button class=" px-4 rounded-lg py-2 text-base bg-white">ShopEase</button>
-                        <h1 id="historyTitle" class="text-2xl font-medium">Fix Mobile Button Issue </h1>
+                        <h1 id="history-Title" class=" history-title text-2xl font-medium">Fix Mobile Button Issue </h1>
                         <div class="bg-white rounded-lg p-4">
-                            <p class="text-p opacity-50">Debug using Chrome DevTools, check for overlapping...</p>
+                            <p class="text-p opacity-50">Fix mobile button for better responsiveness and proper functionality.</p>
                         </div>
                         <div class="border-b-2 border-primary border-dashed">
                             
@@ -109,16 +109,16 @@
                                 <h2 class="font-medium">21 March 2025</h2>
                             </div>
                             <div>
-                                <button id="complete" class="px-4 rounded-lg py-2 text-base bg-button text-white">Completed</button>
+                                <button id="complete" class="completed px-4 rounded-lg py-2 text-base bg-button text-white">Completed</button>
                             </div>
                         </div>
                         
                     </div>
-                    <div class="bg-primary p-3 rounded-2xl space-y-3">
-                        <button class=" px-4 rounded-lg py-2 text-base bg-white">ShopEase</button>
-                        <h1 class="text-2xl font-medium">Fix Mobile Button Issue </h1>
+                    <div class="bg-primary p-3 rounded-2xl space-y-3 task-box">
+                        <button class=" px-4 rounded-lg py-2 text-base bg-white">CloudSync</button>
+                        <h1 class="text-2xl font-medium history-title">Add Dark Mode</h1>
                         <div class="bg-white rounded-lg p-4">
-                            <p class="text-p opacity-50">Debug using Chrome DevTools, check for overlapping...</p>
+                            <p class="text-p opacity-50">Enable dark mode for better user experience and reduced eye strain.</p>
                         </div>
                         <div class="border-b-2 border-primary border-dashed">
                             
@@ -126,19 +126,19 @@
                         <div class="flex justify-between items-center">
                             <div>
                                 <p class="text-secondary opacity-50 ">Deadline</p>
-                                <h2 class="font-medium">21 March 2025</h2>
+                                <h2 class="font-medium">11 March 2025</h2>
                             </div>
                             <div>
-                                <button onclick="devCount()" id="complete" class="px-4 rounded-lg py-2 text-base bg-button text-white">Completed</button>
+                                <button id="complete-1" class=" completed px-4 rounded-lg py-2 text-base bg-button text-white">Completed</button>
                             </div>
                         </div>
                         
                     </div>
-                    <div class="bg-primary p-3 rounded-2xl space-y-3">
-                        <button class=" px-4 rounded-lg py-2 text-base bg-white">ShopEase</button>
-                        <h1 class="text-2xl font-medium">Fix Mobile Button Issue </h1>
+                    <div class="bg-primary p-3 rounded-2xl space-y-3 task-box">
+                        <button class=" px-4 rounded-lg py-2 text-base bg-white">SwiftPay</button>
+                        <h1 class="text-2xl font-medium history-title">Optimize  Home page  </h1>
                         <div class="bg-white rounded-lg p-4">
-                            <p class="text-p opacity-50">Debug using Chrome DevTools, check for overlapping...</p>
+                            <p class="text-p opacity-50">Optimize home page for better performance and user experience.</p>
                         </div>
                         <div class="border-b-2 border-primary border-dashed">
                             
@@ -146,19 +146,19 @@
                         <div class="flex justify-between items-center">
                             <div>
                                 <p class="text-secondary opacity-50 ">Deadline</p>
-                                <h2 class="font-medium">21 March 2025</h2>
+                                <h2 class="font-medium">02 april 2025</h2>
                             </div>
                             <div>
-                                <button class="px-4 rounded-lg py-2 text-base bg-button text-white">Completed</button>
+                                <button id="complete-2" class=" completed px-4 rounded-lg py-2 text-base bg-button text-white">Completed</button>
                             </div>
                         </div>
                         
                     </div>
-                    <div class="bg-primary p-3 rounded-2xl space-y-3">
-                        <button class=" px-4 rounded-lg py-2 text-base bg-white">ShopEase</button>
-                        <h1 class="text-2xl font-medium">Fix Mobile Button Issue </h1>
+                    <div class="bg-primary p-3 rounded-2xl space-y-3 task-box">
+                        <button class=" px-4 rounded-lg py-2 text-base bg-white">Meta</button>
+                        <h1 class="text-2xl font-medium history-title">Add new emoji 🤲</h1>
                         <div class="bg-white rounded-lg p-4">
-                            <p class="text-p opacity-50">Debug using Chrome DevTools, check for overlapping...</p>
+                            <p class="text-p opacity-50">Enhance with new emojis for better user engagement and expression. 😊✨</p>
                         </div>
                         <div class="border-b-2 border-primary border-dashed">
                             
@@ -166,19 +166,19 @@
                         <div class="flex justify-between items-center">
                             <div>
                                 <p class="text-secondary opacity-50 ">Deadline</p>
-                                <h2 class="font-medium">21 March 2025</h2>
+                                <h2 class="font-medium"> 07 june 2025</h2>
                             </div>
                             <div>
-                                <button class="px-4 rounded-lg py-2 text-base bg-button text-white">Completed</button>
+                                <button id="complete-3" class=" completed px-4 rounded-lg py-2 text-base bg-button text-white">Completed</button>
                             </div>
                         </div>
                         
                     </div>
-                    <div class="bg-primary p-3 rounded-2xl space-y-3">
-                        <button class=" px-4 rounded-lg py-2 text-base bg-white">ShopEase</button>
-                        <h1 class="text-2xl font-medium">Fix Mobile Button Issue </h1>
+                    <div class="bg-primary p-3 rounded-2xl space-y-3 task-box">
+                        <button class=" px-4 rounded-lg py-2 text-base bg-white">Google LLC</button>
+                        <h1 class="text-2xl font-medium history-title">Integrate OpenAI API  </h1>
                         <div class="bg-white rounded-lg p-4">
-                            <p class="text-p opacity-50">Debug using Chrome DevTools, check for overlapping...</p>
+                            <p class="text-p opacity-50">Integrate OpenAI API for advanced AI features and automation</p>
                         </div>
                         <div class="border-b-2 border-primary border-dashed">
                             
@@ -186,19 +186,19 @@
                         <div class="flex justify-between items-center">
                             <div>
                                 <p class="text-secondary opacity-50 ">Deadline</p>
-                                <h2 class="font-medium">21 March 2025</h2>
+                                <h2 class="font-medium">27 March 2025</h2>
                             </div>
                             <div>
-                                <button class="px-4 rounded-lg py-2 text-base bg-button text-white">Completed</button>
+                                <button id="complete-4" class="completed px-4 rounded-lg py-2 text-base bg-button text-white">Completed</button>
                             </div>
                         </div>
                         
                     </div>
-                    <div class="bg-primary p-3 rounded-2xl space-y-3">
-                        <button class=" px-4 rounded-lg py-2 text-base bg-white">ShopEase</button>
-                        <h1 class="text-2xl font-medium">Fix Mobile Button Issue </h1>
+                    <div class="bg-primary p-3 rounded-2xl space-y-3 task-box">
+                        <button class=" px-4 rounded-lg py-2 text-base bg-white">Glassdoar</button>
+                        <h1 class="text-2xl font-medium history-title">Improve Job searching </h1>
                         <div class="bg-white rounded-lg p-4">
-                            <p class="text-p opacity-50">Debug using Chrome DevTools, check for overlapping...</p>
+                            <p class="text-p opacity-50">Enhance or improve job search for better accuracy and user experience.</p>
                         </div>
                         <div class="border-b-2 border-primary border-dashed">
                             
@@ -206,10 +206,10 @@
                         <div class="flex justify-between items-center">
                             <div>
                                 <p class="text-secondary opacity-50 ">Deadline</p>
-                                <h2 class="font-medium">21 March 2025</h2>
+                                <h2 class="font-medium">6 april 2025</h2>
                             </div>
                             <div>
-                                <button class="px-4 rounded-lg py-2 text-base bg-button text-white">Completed</button>
+                                <button id="complete-5" class=" completed px-4 rounded-lg py-2 text-base bg-button text-white">Completed</button>
                             </div>
                         </div>
                         

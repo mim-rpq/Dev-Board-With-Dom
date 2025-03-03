@@ -46,57 +46,82 @@
         <h1 class="text-3xl font-bold text-center my-5">Blog</h1>
         <div class="bg-white rounded-lg p-5 space-y-3 mb-6">
             <div>
-                <h1 class="text-2xl font-semibold">Question-1: What are the different ways to select an element in the DOM?</h1>
+                <h1 class="text-3xl font-semibold">Question-1: What are the different ways to select an element in the DOM?</h1>
             </div>
             <div class="border-b-2 border-dashed ">
 
             </div>
             <div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus tenetur blanditiis omnis tempora hic pariatur sequi enim eius possimus recusandae! Voluptatibus accusamus itaque ad sequi soluta, mollitia fugit quos quibusdam!</p>
+                <p class="text-2xl font-semibold">In the DOM, we can select elements in various ways using JavaScript. 
+
+                </p>
+                <li class="text-xl" >Selecting by ID</li>
+                     <p>document.getElementById("Id")</p>
+                <li class="text-xl">Selecting by Class Name</li>
+                     <p>document.getElementsByClassName("Class");</p>
+                <li class="text-xl" >Selecting by Tag Name</li>
+                     <p>document.getElementsByTagName("p");</p>
+                <li class="text-xl">Selecting by Query Selector</li>
+                     <p>document.querySelector(".Class")</p>
+                <li class="text-xl" >Selecting by Query Selector All</li>
+                     <p>document.querySelectorAll("div");</p>
+                <li class="text-xl" >Selecting by Name Attribute</li>
+                    <p>document.getElementsByName("username");</p>
             </div>
         </div>
         <div class="bg-white rounded-lg p-5 space-y-3 mb-6">
             <div>
-                <h1 class="text-2xl font-semibold">Question-1: What are the different ways to select an element in the DOM?</h1>
+                <h1 class="text-2xl font-semibold">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h1>
             </div>
             <div class="border-b-2 border-dashed ">
 
             </div>
             <div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus tenetur blanditiis omnis tempora hic pariatur sequi enim eius possimus recusandae! Voluptatibus accusamus itaque ad sequi soluta, mollitia fugit quos quibusdam!</p>
+                <li class="text-xl">InnerHTML</li>
+                <p>innerHTML is a property that allows you to get or set the HTML content inside an element. It parses HTML, meaning it treats HTML tags as actual elements instead of plain text.</p>
+                <li class="text-xl">InnerText</li>
+                <p>innerText retrieves or sets the visible text inside an element. It ignores HTML tags and excludes hidden text </p>
+                <li class="text-xl">TextContent</li>
+                <p>textContent retrieves or sets all text inside an element, even if it's hidden with CSS. It does not parse HTML, treating it as plain text.</p>
             </div>
         </div>
         <div class="bg-white rounded-lg p-5 space-y-3 mb-6">
             <div>
-                <h1 class="text-2xl font-semibold">Question-1: What are the different ways to select an element in the DOM?</h1>
+                <h1 class="text-2xl font-semibold">What is event delegation in the DOM?</h1>
             </div>
             <div class="border-b-2 border-dashed ">
 
             </div>
             <div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus tenetur blanditiis omnis tempora hic pariatur sequi enim eius possimus recusandae! Voluptatibus accusamus itaque ad sequi soluta, mollitia fugit quos quibusdam!</p>
+                <p>Event Delegation is a technique in JavaScript that allows us to efficiently manage events on multiple child elements using a single event listener on a parent element. Instead of attaching an event listener to each individual child element, we place the listener on a common parent and use event bubbling to handle the event when it reaches the target element. <br>
+                    It is a powerful technique that improves efficiency, performance, and scalability in JavaScript event handling. By leveraging event bubbling, we can manage events more effectively with minimal code.</p>
             </div>
         </div>
         <div class="bg-white rounded-lg p-5 space-y-3 mb-6">
             <div>
-                <h1 class="text-2xl font-semibold">Question-1: What are the different ways to select an element in the DOM?</h1>
+                <h1 class="text-2xl font-semibold">What is event bubbling in the DOM?</h1>
             </div>
             <div class="border-b-2 border-dashed ">
 
             </div>
             <div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus tenetur blanditiis omnis tempora hic pariatur sequi enim eius possimus recusandae! Voluptatibus accusamus itaque ad sequi soluta, mollitia fugit quos quibusdam!</p>
+                <p>Event Bubbling is a mechanism in the  DOM where an event triggered on a child element first executes on that element and then propagates upward to its parent and ancestors. <br>
+                    It makes event handling efficient, but sometimes we may need to stop it to prevent unintended behavior. Understanding bubbling helps in better event management and performance optimization in JavaScript.</p>
             </div>
         </div>
         <div class="bg-white rounded-lg p-5 space-y-3 mb-6">
             <div>
-                <h1 class="text-2xl font-semibold">Question-1: What are the different ways to select an element in the DOM?</h1>
+                <h1 class="text-2xl font-semibold">How do you create, add, and remove elements using JavaScript?</h1>
             </div>
             <div class="border-b-2 border-dashed ">
 
             </div>
             <div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus tenetur blanditiis omnis tempora hic pariatur sequi enim eius possimus recusandae! Voluptatibus accusamus itaque ad sequi soluta, mollitia fugit quos quibusdam!</p>
+                <p>Manipulating the DOM dynamically using JavaScript allows for creating interactive and responsive web applications. By leveraging methods like createElement(), appendChild(), and remove(), we can efficiently create, add, and remove elements as needed.
+
+                    Using event delegation and efficient DOM manipulation improves performance, especially when dealing with a large number of elements. Choosing the right method based on the situation ensures smooth and optimized web development. 
+                    
+                    Mastering these techniques will help us build dynamic and user-friendly applications with ease.</p>
             </div>
         </div>
     </main>

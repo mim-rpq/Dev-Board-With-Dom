@@ -4,6 +4,11 @@ function getTextFieldValueById(id){
     return textValueNumber;
 }
 
+let myCreatDate = new Date()
+const myDate = myCreatDate.toDateString()
+const date = document.getElementById('date');
+date.innerText = myDate
+
 
 document.getElementById('history').addEventListener('click', function(){
     const history = document.getElementById('activity')
